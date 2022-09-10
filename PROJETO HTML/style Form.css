@@ -1,0 +1,41 @@
+*
+{
+    background-color: orange;
+    text-align: justify;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.titulo img {
+    margin: 25px;
+    width: 100%;
+    height: 50%;
+}
+
+.fundo {
+    background-color: rgb(39, 1, 39);
+}
+
+.cabecalho {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    border-radius: 50%;
+    width: 285px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 250px;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    background-color: white;
+}

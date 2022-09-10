@@ -1,0 +1,152 @@
+@import url();
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg, #840a0a, #08498a);
+    background-repeat: no-repeat;
+    min-height: 100px;
+    min-width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main.container {
+    background: rgb(69, 62, 127);
+    max-width: 1500px;
+    min-height: 40px;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgb(157, 11, 157);
+    border-radius: 8px;
+}
+
+main h2 {
+    font-weight: 1500;
+    margin-bottom: 2rem;
+    position:relative;
+}
+
+main h2 ::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 25px;
+    bottom: 3px;
+    left: 0;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #3f056e, #054292);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    position: relative;
+}
+
+form .input-field:first-child {
+    margin-bottom: 1.5rem;
+}
+
+.input-field .underline :: before {
+content: '';
+position: absolute;
+height: 1px;
+width: 100%;
+bottom: -5px;
+left: 0;
+background: #01102b;
+}
+
+.input-field .underline :: after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(rgb(2, 2, 51));
+    transform: scaleX(0);
+    transition: all .3s ease-in-out;
+    transform-origin: left;
+    
+}
+
+.input-field input:focus {
+transform: scaleX(1);
+}
+
+.input-field input {
+    outline: none;
+    font-size: 0.9rem;
+    color: blue;
+}
+
+.input-field input :: ::placeholder {
+    color: rgb(39, 1, 39);
+}
+
+form input[type="submit"] {
+    margin-top: 2rem;
+    padding: 0.4rem;
+    background: linear-gradient(to left, #4776E6);
+    cursor: pointer;
+    color: rgba(52, 2, 2, 0.991);
+    font-size: 0.9rem;
+    font-weight: 50;
+    border-radius: 4px;
+    transition: 0.3s ease;
+}
+
+form input[type="submit"]: :hover {
+    letter-spacing: 0.5px;
+    background: linear-gradient(to :right, #4776E6);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.footer span {
+    color: #08498a;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.footer .social-field {
+    padding: 0.4rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.footer .social-field a i {
+    margin: 0 0.5rem;
+    width: 15px;
+}
+
+.footer .social-field a {
+    text-decoration: none;
+    color: #08498a;
+}
+
+.footer .social-field.twitter {
+    background: linear-gradient(to right, #9d6305, #9d6305);   
+}
+
+.footer .social-field.facebook {
+    background: linear-gradient(to right, #01102b, #01102b);   
+}
