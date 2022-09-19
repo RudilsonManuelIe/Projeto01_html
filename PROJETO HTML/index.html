@@ -5,6 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+        <script src="script.js" defer></script>
+        <script src="script.js" defer></script>
         <title>roupas africanas</title>
     </head>
 
@@ -186,12 +188,48 @@
 
 
 
+<input class="favorite styled"
+       type="button"
+       value="Add to favorites">
+
+
+       <form>
+        <input type="button" value="Start machine">
+      </form>
+      <p>The machine is stopped.</p>
+
+      <form>
+        <input type="button" value="Start machine" accesskey="s">
+      </form>
+      <p>The machine is stopped.</p>
+
+      <div class="toolbar">
+        <input type="color" aria-label="select pen color">
+        <input type="range" min="2" max="50" value="30" aria-label="select pen size"><span class="output">30</span>
+        <input type="button" value="Clear canvas">
+      </div>
+      
+      <canvas class="myCanvas">
+        <p>Add suitable fallback here.</p>
+      </canvas>
+
+      
 
 
 
 
-
-
+      <script>
+        var win = null;
+        function NovaJanela(pagina,nome,w,h,scroll){
+        LeftPosition = (screen.width) ? (screen.width-w)/2 : 0;
+        TopPosition = (screen.height) ? (screen.height-h)/2 : 0;
+        settings = 'location=no,toolbar=no,directories=no,status=no,height='+h+',width='+w+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',resizable';
+        win = window.open(pagina,nome,settings);
+        }
+      </script>
+      
+      
+      <a href="http://www.terminalroot.com.br/" onclick="NovaJanela(this.href,'nomeJanela','820','560','yes');return false">Abrir Pop-Up</a>
 
 
 
